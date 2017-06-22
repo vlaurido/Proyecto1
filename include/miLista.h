@@ -46,17 +46,17 @@ extern ElementoLista *Lista_Buscar(ListaEnlazada *lista, void *objeto); //YA EST
 /*Funciones de modificacion de la lista*/
 extern int Lista_InsertarFin(ListaEnlazada *lista, void *objeto); //YA ESTA
 extern int Lista_InsertarInicio(ListaEnlazada *lista, void *objeto); //YA ESTA
-extern void Lista_Sacar(ListaEnlazada *lista, ElementoLista *elemento);
-extern void Lista_SacarTodos(ListaEnlazada *lista);
-extern int Lista_InsertarDespues(ListaEnlazada *lista, void *objeto, ElementoLista *elemento);
-extern int Lista_InsertarAntes(ListaEnlazada *lista, void *objeto, ElementoLista *elemento);
+extern void Lista_Sacar(ListaEnlazada *lista, ElementoLista *elemento);//ALEXIS
+extern void Lista_SacarTodos(ListaEnlazada *lista); //VIVI
+extern int Lista_InsertarDespues(ListaEnlazada *lista, void *objeto, ElementoLista *elemento); //ALEXIS
+extern int Lista_InsertarAntes(ListaEnlazada *lista, void *objeto, ElementoLista *elemento); //ALEXIS
 
 
 /*Funciones que devuelven un elemento particular de la lista*/
-extern ElementoLista *Lista_Primero(ListaEnlazada *lista);
-extern ElementoLista *Lista_Ultimo(ListaEnlazada *lista);
-extern ElementoLista *Lista_Siguiente(ListaEnlazada *lista, ElementoLista *elemento);
-extern ElementoLista *Lista_Anterior(ListaEnlazada *lista, ElementoLista *elemento);
+extern ElementoLista *Lista_Primero(ListaEnlazada *lista); //ALEXIS
+extern ElementoLista *Lista_Ultimo(ListaEnlazada *lista); //ALEXIS
+extern ElementoLista *Lista_Siguiente(ListaEnlazada *lista, ElementoLista *elemento); //VIVI
+extern ElementoLista *Lista_Anterior(ListaEnlazada *lista, ElementoLista *elemento); //VIVI
 
 
 #endif
