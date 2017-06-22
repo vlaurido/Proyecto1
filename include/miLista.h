@@ -36,16 +36,16 @@ typedef struct ListaEnlazadaTDA{
 }ListaEnlazada;
 
 /*Definición de funciones sobre la lista*/
-extern int Lista_Inicializar(ListaEnlazada *lista);
+extern int Lista_Inicializar(ListaEnlazada *lista); //YA ESTA
 
-extern int Lista_Vacia(ListaEnlazada *lista);
-extern int Lista_Conteo(ListaEnlazada *lista);
+extern int Lista_Vacia(ListaEnlazada *lista); //YA ESTA
+extern int Lista_Conteo(ListaEnlazada *lista); //YA ESTA
 
-extern ElementoLista *Lista_Buscar(ListaEnlazada *lista, void *objeto);
+extern ElementoLista *Lista_Buscar(ListaEnlazada *lista, void *objeto); //YA ESTA
 
 /*Funciones de modificacion de la lista*/
-extern int Lista_InsertarFin(ListaEnlazada *lista, void *objeto);
-extern int Lista_InsertarInicio(ListaEnlazada *lista, void *objeto);
+extern int Lista_InsertarFin(ListaEnlazada *lista, void *objeto); //YA ESTA
+extern int Lista_InsertarInicio(ListaEnlazada *lista, void *objeto); //YA ESTA
 extern void Lista_Sacar(ListaEnlazada *lista, ElementoLista *elemento);
 extern void Lista_SacarTodos(ListaEnlazada *lista);
 extern int Lista_InsertarDespues(ListaEnlazada *lista, void *objeto, ElementoLista *elemento);
