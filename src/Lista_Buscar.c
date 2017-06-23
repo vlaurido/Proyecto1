@@ -1,11 +1,12 @@
 #include "miLista.h"
+#include <stdlib.h>
 
 ElementoLista *Lista_Buscar(ListaEnlazada *lista, void *objeto);
 
 ElementoLista *Lista_Buscar(ListaEnlazada *lista, void *objeto){
 	if(lista!=NULL){
-		ElementoLista *aux = lista->ancla;
-		while((aux->siguiente)!=(lista->ancla) && (aux->objeto)!=(objeto)){
+		ElementoLista *aux = (ElementoLista *)lista->ancla;
+		while((aux->siguiente)!=((ElementoLista *)lista->ancla) && (aux->objeto)!=(objeto)){
 			aux = aux->siguiente;			
 		}
 		if (aux->objeto==objeto){
