@@ -8,5 +8,6 @@ void Lista_Sacar(ListaEnlazada *lista, ElementoLista *elemento) {
 		ElementoLista *anterior = Lista_Anterior(lista,elemento);
 		siguiente->anterior = anterior;
 		anterior->siguiente = siguiente;
+		lista->numeroElementos -= 1;
 	}
 }
