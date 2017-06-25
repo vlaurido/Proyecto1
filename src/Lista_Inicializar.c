@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 // Firma de la funcion que retorna un entero y recibe un puntero a una estructura lista
-//int Lista_Inicializar(ListaEnlazada *lista);
+int Lista_Inicializar(ListaEnlazada *lista);
 
 /** Funcion que permite inicializar una lista dada
 Retorna 0 si se inicializo y -1 si la lista es nula**/
