@@ -6,8 +6,8 @@
 
 /** Funcion que permite sacar todos los elementos de una lista dada**/
 void Lista_SacarTodos(ListaEnlazada *lista){
-	//Se valida que la lista no sea nula
-	if (lista!=NULL){
+	//Se valida que la lista no sea nula y que no este vacia
+	if (lista!=NULL && !Lista_Vacia(lista)) {
 		lista->numeroElementos = 0;
 		ElementoLista *elem = &(lista->ancla);
 		elem->siguiente = elem;

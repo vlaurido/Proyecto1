@@ -9,12 +9,12 @@ Retorna 0 si se inicializo y -1 si la lista es nula**/
 int Lista_Inicializar(ListaEnlazada *lista){
 	//Se valida que la lista no sea nula
 	if (lista!=NULL){
-		lista->numeroElementos = 0;
 		ElementoLista *elem = (ElementoLista *)malloc(sizeof(ElementoLista));
-		lista->ancla = *elem;
 		elem->objeto = NULL;
 		elem->siguiente = elem;
 		elem->anterior = elem;
+		lista->ancla = *elem;
+		lista->numeroElementos = 0;
 		return 0;
 	}
 	//Se retorna -1 cuando es nula

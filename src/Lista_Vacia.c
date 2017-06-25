@@ -14,6 +14,8 @@ int Lista_Vacia(ListaEnlazada *lista){
 			return 1;
 		}
 		return 0;
+
+		return ((lista->numeroElementos) == 0);
 	}
 	return -1;
 }

@@ -1,10 +1,10 @@
 all: prueba
 
 prueba: pruebaLista objects libmilista
-	gcc -Llib/ obj/prueba.o obj/Lista*.o -lmilista -o bin/prueba
+	gcc -Wall -Llib/ obj/prueba.o obj/Lista*.o -lmilista -o bin/prueba
 
 pruebaLista: ./src/pruebaLista.c
-	gcc -Wall -Iinclude/ -c src/pruebaLista.c -o obj/prueba.o
+	gcc -Wall -Iinclude/ -c -g src/pruebaLista.c -o obj/prueba.o
 
 objects:
 	gcc -Wall -Iinclude/ -c src/Lista_Inicializar.c -o obj/ListaInicializar.o

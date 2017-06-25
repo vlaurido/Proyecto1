@@ -7,8 +7,10 @@ void Lista_Sacar(ListaEnlazada *lista, ElementoLista *elemento) {
 	if ((lista != NULL) && (elemento != NULL) && !Lista_Vacia(lista)) {
 		ElementoLista *aux = Lista_Buscar(lista,elemento->objeto);
 		if (aux != NULL) {
-			ElementoLista *siguiente = Lista_Siguiente(lista,elemento);
-			ElementoLista *anterior = Lista_Anterior(lista,elemento);
+			ElementoLista *siguiente = (ElementoLista *)malloc(sizeof(ElementoLista));
+			siguiente = elemento->siguiente;
+			ElementoLista *anterior = (ElementoLista *)malloc(sizeof(ElementoLista));
+			anterior = elemento->anterior;
 			if (elemento == Lista_Ultimo(lista)) {
 				anterior->siguiente = &(lista->ancla);
 				lista->ancla.anterior = anterior;
