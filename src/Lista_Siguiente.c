@@ -4,8 +4,8 @@
 ElementoLista *Lista_Siguiente(ListaEnlazada *lista, ElementoLista *elemento);
 
 ElementoLista *Lista_Siguiente(ListaEnlazada *lista, ElementoLista *elemento){
-	if (lista!=NULL && elemento!=NULL){
-		ElementoLista *aux = &(lista->ancla);
+	if ((lista!=NULL) && (elemento!=NULL) && !Lista_Vacia(lista)){
+		/*ElementoLista *aux = &(lista->ancla);
 		if(elemento->siguiente==aux){
 			return NULL;
 		}else{
@@ -17,7 +17,10 @@ ElementoLista *Lista_Siguiente(ListaEnlazada *lista, ElementoLista *elemento){
 				}
   				aux = aux->siguiente;
 			}return NULL;
-		}
+		}*/
+		ElementoLista *aux = Lista_Ultimo(lista);
+		if (elemento != aux)
+			return elemento->siguiente;
 	}
 	return NULL;	
 }

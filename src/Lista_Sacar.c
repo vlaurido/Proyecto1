@@ -4,7 +4,7 @@
 void Lista_Sacar(ListaEnlazada *lista, ElementoLista *elemento);
 
 void Lista_Sacar(ListaEnlazada *lista, ElementoLista *elemento) {
-	if (lista != NULL && elemento != NULL) {
+	if ((lista != NULL) && (elemento != NULL)) {
 		ElementoLista *siguiente = Lista_Siguiente(lista,elemento);
 		ElementoLista *anterior = Lista_Anterior(lista,elemento);
 		siguiente->anterior = anterior;

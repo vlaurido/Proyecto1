@@ -4,7 +4,7 @@
 int Lista_InsertarDespues(ListaEnlazada *lista, void *objeto, ElementoLista *elemento);
 
 int Lista_InsertarDespues(ListaEnlazada *lista, void *objeto, ElementoLista *elemento) {
-	if (lista != NULL && elemento != NULL) {
+	if ((lista != NULL) && (elemento != NULL)) {
 		ElementoLista *elem = (ElementoLista *)malloc(sizeof(ElementoLista));
 		elem->objeto = objeto;
 		ElementoLista *siguiente = Lista_Siguiente(lista,elemento);
