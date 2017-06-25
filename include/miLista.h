@@ -53,8 +53,8 @@ extern int Lista_InsertarAntes(ListaEnlazada *lista, void *objeto, ElementoLista
 
 
 /*Funciones que devuelven un elemento particular de la lista*/
-extern ElementoLista *Lista_Primero(ListaEnlazada *lista); //ALEXIS
-extern ElementoLista *Lista_Ultimo(ListaEnlazada *lista); //ALEXIS
+extern ElementoLista *Lista_Primero(ListaEnlazada *lista); //YA ESTA
+extern ElementoLista *Lista_Ultimo(ListaEnlazada *lista); //YA ESTA
 extern ElementoLista *Lista_Siguiente(ListaEnlazada *lista, ElementoLista *elemento); //YA ESTA
 extern ElementoLista *Lista_Anterior(ListaEnlazada *lista, ElementoLista *elemento); //YA ESTA
 

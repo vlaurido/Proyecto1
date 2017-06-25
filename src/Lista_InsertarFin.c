@@ -4,7 +4,7 @@
 int Lista_InsertarFin(ListaEnlazada *lista, void *objeto);
 
 int Lista_InsertarFin(ListaEnlazada *lista, void *objeto) {
-	if (lista != NULL) {
+	if (lista != NULL && objeto != NULL) {
 		ElementoLista *elem = (ElementoLista *)malloc(sizeof(ElementoLista));
 		elem->objeto = objeto;
 		ElementoLista *ultimo = Lista_Ultimo(lista);
