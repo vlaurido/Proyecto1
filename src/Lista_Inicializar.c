@@ -7,10 +7,10 @@ int Lista_Inicializar(ListaEnlazada *lista){
 	if (lista!=NULL){
 		lista->numeroElementos = 0;
 		ElementoLista *elem = (ElementoLista *)malloc(sizeof(ElementoLista));
-		(ElementoLista *)lista->ancla = elem;
+		lista->ancla = *elem;
 		elem->objeto = NULL;
-		elem->siguiente = &(lista->ancla);
-		elem->anterior = &(lista->ancla);
+		elem->siguiente = elem;
+		elem->anterior = elem;
 
 		return 0;
 	}
