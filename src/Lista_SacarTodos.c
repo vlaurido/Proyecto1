@@ -7,8 +7,8 @@ void Lista_SacarTodos(ListaEnlazada *lista){
 	if (lista!=NULL){
 		lista->numeroElementos = 0;
 		ElementoLista *elem = &(lista->ancla);
-		elem->siguiente = &(lista->ancla);
-		elem->anterior = &(lista->ancla);
+		elem->siguiente = elem;
+		elem->anterior = elem;
 		elem->objeto = NULL;
 	}
 }

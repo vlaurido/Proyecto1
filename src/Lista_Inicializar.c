@@ -11,7 +11,6 @@ int Lista_Inicializar(ListaEnlazada *lista){
 		elem->objeto = NULL;
 		elem->siguiente = elem;
 		elem->anterior = elem;
-
 		return 0;
 	}
 	return -1;

@@ -18,7 +18,8 @@ ElementoLista *Lista_Anterior(ListaEnlazada *lista, ElementoLista *elemento){
   				aux = aux->siguiente;
 			}return NULL;
 		}*/
-		ElementoLista *aux = Lista_Primero(lista);
+		ElementoLista *aux = (ElementoLista *)malloc(sizeof(ElementoLista));
+		aux = Lista_Primero(lista);
 		if (elemento != aux)
 			return elemento->anterior;
 	}
