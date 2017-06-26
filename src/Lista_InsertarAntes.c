@@ -4,10 +4,11 @@
 int Lista_InsertarAntes(ListaEnlazada *lista, void *objeto, ElementoLista *elemento);
 
 int Lista_InsertarAntes(ListaEnlazada *lista, void *objeto, ElementoLista *elemento) {
-	if ((lista != NULL) && (elemento != NULL)) {
+	if ((lista != NULL) && (elemento != NULL) && (objeto != NULL) && !Lista_Vacia(lista)) {
 		ElementoLista *elem = (ElementoLista *)malloc(sizeof(ElementoLista));
 		elem->objeto = objeto;
-		ElementoLista *anterior = Lista_Anterior(lista,elemento);
+		ElementoLista *anterior = (ElementoLista *)malloc(sizeof(ElementoLista));
+		anterior = elemento->anterior;
 		elemento->anterior = elem;
 		elem->siguiente = elemento;
 		elem->anterior = anterior;
